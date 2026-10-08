@@ -1,0 +1,452 @@
+/* configurações gerais */
+
+:root {
+
+    --fundo: #0b1828;
+
+    --fundo-secundario: #0e2032;
+
+    --dourado: #d4af5a;
+
+    --dourado-claro: #f0d58a;
+
+    --texto: #e8eef5;
+
+    --texto-secundario: #aebed0;
+
+    --borda: #2c435a;
+}
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background-color: var(--fundo);
+
+    color: var(--texto);
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.5;
+}
+
+
+
+
+
+/* cabeçalho */
+
+header {
+
+    text-align: center;
+
+    padding: 30px 20px 20px;
+
+    border-bottom: 1px solid var(--borda);
+
+    background-color: var(--fundo-secundario);
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    color: var(--dourado);
+
+    font-family: "MedievalSharp", Georgia, serif;
+
+    font-size: 40px;
+}
+
+header p {
+
+    margin: 5px 0 20px;
+
+    color: var(--texto-secundario);
+}
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+nav a {
+
+    margin: 0 12px;
+
+    color: var(--texto);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.2s;
+}
+
+nav a:hover {
+
+    color: var(--dourado);
+}
+
+
+
+
+
+
+
+/* seções */
+
+section {
+
+    width: 85%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 40px 0;
+}
+
+h2 {
+
+    margin: 0 0 25px;
+
+    color: var(--dourado);
+}
+
+h3 {
+
+    color: var(--dourado-claro);
+}
+
+p {
+
+    color: var(--texto-secundario);
+}
+
+/* sobre o herói */
+
+
+
+
+
+.heroi {
+
+    display: flex;
+
+    align-items: center;
+}
+
+.heroi img {
+
+    width: 280px;
+
+    margin-right: 30px;
+
+    border: 1px solid var(--borda);
+}
+
+.descricao {
+
+    width: 650px;
+}
+
+.descricao li {
+
+    margin: 7px 0;
+
+    color: var(--texto-secundario);
+}
+
+.botao {
+
+    display: inline-block;
+    
+    margin-top: 10px;
+    
+    padding: 10px 15px;
+    
+    background-color: var(--dourado);
+    
+    color: var(--fundo);
+    
+    text-decoration: none;
+    
+    font-weight: bold;
+    
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao:hover {
+
+    background-color: var(--dourado-claro);
+
+    transform: scale(1.03);
+}
+
+
+
+
+
+/* atributos e habilidades */
+
+.atributo {
+
+    margin-bottom: 18px;
+}
+
+.atributo-nome {
+
+    display: flex;
+    
+    justify-content: space-between;
+    
+    margin-bottom: 5px;
+}
+
+.atributo-nome strong {
+
+    color: var(--texto);
+}
+
+.barra {
+
+    height: 12px;
+    
+    border: 1px solid var(--borda);
+    
+    background-color: var(--fundo-secundario);
+}
+
+.barra-preenchida {
+
+    height: 100%;
+    
+    background-color: var(--dourado);
+}
+
+.duas-colunas {
+
+    display: flex;
+}
+
+.duas-colunas > div {
+
+    width: 50%;
+    
+    padding-right: 35px;
+}
+
+.habilidade {
+
+    padding: 8px 0;
+    
+    border-bottom: 1px solid var(--borda);
+}
+
+.habilidade h4 {
+
+    margin: 0;
+    
+    color: var(--texto);
+}
+
+.habilidade p {
+
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* inventário e conquistas */
+
+.grid-itens {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+
+    padding: 18px;
+    
+    margin: 8px;
+    
+    border: 1px solid var(--borda);
+    
+    background-color: var(--fundo-secundario);
+    
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.item:hover {
+
+    background-color: #162b40;
+    
+    transform: scale(1.02);
+}
+
+.item h3 {
+
+    margin-top: 0;
+}
+
+.item p {
+
+    margin: 7px 0;
+}
+
+
+
+
+
+
+
+/* formulário */
+
+form {
+    
+    width: 650px;
+    
+    max-width: 100%;
+}
+
+label {
+    
+    display: block;
+    
+    margin: 12px 0 5px;
+
+    color: var(--texto);
+
+    font-weight: bold;
+}
+
+input,
+textarea {
+    
+    width: 100%;
+    
+    padding: 10px;
+    
+    border: 1px solid var(--borda);
+    
+    background-color: var(--fundo-secundario);
+    
+    color: var(--texto);
+    
+    font-family: Arial, sans-serif;
+}
+
+button {
+   
+    margin-top: 15px;
+   
+    padding: 10px 18px;
+   
+    border: 1px solid var(--dourado);
+   
+    background-color: var(--dourado);
+   
+    color: var(--fundo);
+   
+    font-weight: bold;
+   
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    
+    background-color: var(--dourado-claro);
+    
+    transform: scale(1.03);
+}
+
+
+
+/* rodapé */
+
+footer {
+   
+    text-align: center;
+   
+    padding: 25px;
+   
+    border-top: 1px solid var(--borda);
+   
+    background-color: var(--fundo-secundario);
+}
+
+footer p {
+   
+    margin: 5px 0;
+}
+
+
+
+
+
+/* responsividade */
+
+@media (max-width: 850px) {
+    .grid-itens {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    section {
+        width: 90%;
+    }
+
+    .heroi,
+    .duas-colunas {
+        display: block;
+    }
+
+    .heroi img {
+        width: 240px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .descricao,
+    .duas-colunas > div {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .grid-itens {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        margin: 8px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px 8px;
+    }
+}
